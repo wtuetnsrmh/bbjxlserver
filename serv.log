@@ -1,0 +1,38 @@
+[:01000001] LAUNCH logger serv.log
+[:01000002] LAUNCH snlua bootstrap
+[:01000003] LAUNCH snlua launcher
+[:01000004] LAUNCH snlua cmaster
+[:01000004] master listen socket 0.0.0.0:2013
+[:01000005] LAUNCH snlua cslave
+[:01000005] slave connect to master 127.0.0.1:2013
+[:01000006] LAUNCH harbor 1 16777221
+[:01000004] connect from 127.0.0.1
+[:01000004] Harbor 1 (fd=4) report 127.0.0.1:2526
+[:01000005] Waiting for 0 harbors
+[:01000005] Shakehand ready
+[:01000007] LAUNCH snlua datacenterd
+[:01000008] LAUNCH snlua service_mgr
+[:01000009] LAUNCH snlua main
+[:0100000a] LAUNCH snlua console
+[:0100000b] LAUNCH snlua debug_console 8001
+[:0100000b] Start debug console at 127.0.0.1 8001
+[:0100000c] LAUNCH snlua server/ngx_http 5657
+[:0100000d] LAUNCH snlua sharedatad
+[:0100000e] LAUNCH snlua server/watchdog 10
+[:0100000f] LAUNCH snlua gate
+[:01000010] LAUNCH snlua server/redisd
+[:01000011] LAUNCH snlua server/loggerd
+[:01000012] LAUNCH snlua server/gtimerd
+[:01000013] LAUNCH snlua server/gfunctions
+[:01000014] LAUNCH snlua agent
+[:01000015] LAUNCH snlua agent
+[:01000016] LAUNCH snlua agent
+[:01000017] LAUNCH snlua agent
+[:01000018] LAUNCH snlua agent
+[:01000019] LAUNCH snlua agent
+[:0100001a] LAUNCH snlua agent
+[:0100001b] LAUNCH snlua agent
+[:0100001c] LAUNCH snlua agent
+[:0100001d] LAUNCH snlua agent
+[:01000009] KILL self
+[:01000002] KILL self

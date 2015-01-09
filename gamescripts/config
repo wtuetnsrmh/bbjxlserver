@@ -1,0 +1,16 @@
+root = "./"
+thread = 8
+syslog = 1
+logger = "server.log"
+harbor = 0
+logd = 0 -- open log deamon
+serverid = "2045002"
+start = "main"	-- main script
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+
+lua_path = root .."/lualib/?.lua;"..root.."/lualib/?/init.lua;"..root.."gamescripts/?.lua"
+luaservice = root.."service/?.lua;"..root.."gamescripts/?.lua"
+lualoader = "lualib/loader.lua"
+-- preload = "./gamescripts/preload.lua"	-- run preload.lua before every lua service run
+snax = root.."gamescripts/?.lua;"
+cpath = root.."cservice/?.so"

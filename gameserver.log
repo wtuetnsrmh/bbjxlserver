@@ -1,0 +1,242 @@
+[:00000001] LAUNCH logger gameserver.log
+[:00000002] LAUNCH snlua bootstrap
+[:00000003] LAUNCH snlua launcher
+[:00000004] LAUNCH snlua cdummy
+[:00000005] LAUNCH harbor 0 4
+[:00000006] LAUNCH snlua datacenterd
+[:00000007] LAUNCH snlua service_mgr
+[:00000008] LAUNCH snlua main
+[:00000009] LAUNCH snlua console
+[:0000000a] LAUNCH snlua debug_console 8001
+[:0000000a] Start debug console at 127.0.0.1 8001
+[:0000000b] LAUNCH snlua server/watchdog 10
+[:0000000c] LAUNCH snlua sharedatad
+[:0000000d] LAUNCH snlua multicastd
+[:00000000] A message from [ :00000007 ] to [ :0000000b ] maybe in an endless loop (version = 123)
+[:0000000e] LAUNCH snlua agent
+[:0000000f] LAUNCH snlua agent
+[:00000010] LAUNCH snlua agent
+[:00000011] LAUNCH snlua agent
+[:00000012] LAUNCH snlua agent
+[:00000013] LAUNCH snlua agent
+[:00000014] LAUNCH snlua agent
+[:00000015] LAUNCH snlua agent
+[:00000016] LAUNCH snlua agent
+[:00000017] LAUNCH snlua agent
+[:00000018] LAUNCH snlua server/redisd
+[:00000019] LAUNCH snlua gate
+[:0000001a] LAUNCH snlua server/loggerd
+[:0000001b] LAUNCH snlua server/gfunctions
+[:0000001c] LAUNCH snlua server/gfunctions sub 0
+[:0000001d] LAUNCH snlua server/gfunctions sub 1
+[:0000001e] LAUNCH snlua server/gfunctions sub 2
+[:0000001f] LAUNCH snlua server/gfunctions sub 3
+[:00000020] LAUNCH snlua server/gfunctions sub 4
+[:00000021] LAUNCH snlua server/gfunctions sub 5
+[:00000022] LAUNCH snlua server/gfunctions sub 6
+[:00000023] LAUNCH snlua server/gfunctions sub 7
+[:00000024] LAUNCH snlua server/gfunctions sub 8
+[:00000025] LAUNCH snlua server/gfunctions sub 9
+[:00000026] LAUNCH snlua server/gtimer
+[:00000019] Listen on 0.0.0.0:9898
+[:00000027] LAUNCH snlua server/ngx_http 5657
+[:00000008] KILL self
+[:00000002] KILL self
+[:00000017] KILL self
+[:00000016] KILL self
+[:00000015] KILL self
+[:00000000] A message from [ :00000018 ] to [ :00000014 ] maybe in an endless loop (version = 454537)
+[:00000013] KILL self
+[:00000012] lua call [18 to :12 : 11 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 17 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 23 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 29 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 35 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 41 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 47 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 53 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 59 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] lua call [18 to :12 : 65 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000012] KILL self
+[:00000011] lua call [18 to :11 : 11 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000011] lua call [18 to :11 : 17 msgsz = 2] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: .//lualib/skynet/queue.lua:29: ./gamescripts/actions/RoleAction.lua:208: attempt to index field '?' (a nil value)
+stack traceback:
+	./gamescripts/actions/RoleAction.lua:208: in function 'method'
+	./gamescripts/agent.lua:126: in function <./gamescripts/agent.lua:110>
+	[C]: in function 'xpcall'
+	.//lualib/skynet/queue.lua:21: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet/queue.lua:29: in function 'lock'
+	./gamescripts/agent.lua:110: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
