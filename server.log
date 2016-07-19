@@ -1,0 +1,59 @@
+[:00000001] LAUNCH logger server.log
+[:00000002] LAUNCH snlua bootstrap
+[:00000003] LAUNCH snlua launcher
+[:00000004] LAUNCH snlua cdummy
+[:00000005] LAUNCH harbor 0 4
+[:00000006] LAUNCH snlua datacenterd
+[:00000007] LAUNCH snlua service_mgr
+[:00000008] LAUNCH snlua main
+[:00000009] LAUNCH snlua console
+[:0000000a] LAUNCH snlua debug_console 8001
+[:0000000a] Start debug console at 127.0.0.1 8001
+[:0000000b] LAUNCH snlua server/watchdog 10
+[:0000000c] LAUNCH snlua sharedatad
+[:0000000d] LAUNCH snlua multicastd
+[:0000000e] LAUNCH snlua agent
+[:0000000f] LAUNCH snlua agent
+[:00000010] LAUNCH snlua agent
+[:00000011] LAUNCH snlua agent
+[:00000012] LAUNCH snlua agent
+[:00000013] LAUNCH snlua agent
+[:00000014] LAUNCH snlua agent
+[:00000015] LAUNCH snlua agent
+[:00000016] LAUNCH snlua agent
+[:00000017] LAUNCH snlua agent
+[:00000018] LAUNCH snlua server/redisd
+[:00000019] LAUNCH snlua gate
+[:0000001a] LAUNCH snlua server/loggerd
+[:0000001b] LAUNCH snlua server/gfunctions
+[:0000001c] LAUNCH snlua server/gfunctions sub 0
+[:0000001d] LAUNCH snlua server/gfunctions sub 1
+[:0000001e] LAUNCH snlua server/gfunctions sub 2
+[:0000001f] LAUNCH snlua server/gfunctions sub 3
+[:00000020] LAUNCH snlua server/gfunctions sub 4
+[:00000021] LAUNCH snlua server/gfunctions sub 5
+[:00000022] LAUNCH snlua server/gfunctions sub 6
+[:00000023] LAUNCH snlua server/gfunctions sub 7
+[:00000024] LAUNCH snlua server/gfunctions sub 8
+[:00000025] LAUNCH snlua server/gfunctions sub 9
+[:00000026] LAUNCH snlua server/gtimer
+[:00000019] Listen on 0.0.0.0:9898
+[:00000027] LAUNCH snlua server/ngx_http 5657
+[:00000008] KILL self
+[:00000002] KILL self
+[:00000017] KILL self
+[:00000016] KILL self
+[:00000026] socket: error on 8
+[:00000026] lua call [0 to :26 : 0 msgsz = 24] error : [31m.//lualib/skynet.lua:533: .//lualib/skynet.lua:161: [Socket Error]
+stack traceback:
+	[C]: in function 'error'
+	.//lualib/http/httpc.lua:88: in function 'request'
+	./gamescripts/utils/CommonFunc.lua:214: in function 'notifyClients'
+	./gamescripts/server/gtimer.lua:39: in function 'check_update'
+	./gamescripts/server/gtimer.lua:54: in function 'f'
+	.//lualib/skynet.lua:110: in function <.//lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	.//lualib/skynet.lua:533: in function <.//lualib/skynet.lua:515>[0m
+[:00000015] KILL self
+[:00000014] KILL self
